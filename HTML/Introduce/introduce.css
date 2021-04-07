@@ -1,0 +1,23 @@
+h1{
+    font-size: xx-large;
+    font-family: '돋움';
+}
+img{
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+ol{
+    font-family: '굴림';
+}
+div{
+    display: block;
+}
+#site{
+    flex-direction: column;
+}
+.opgg{
+   font-family: '궁서체'; 
+   background-color: black;
+   color: white;
+}
