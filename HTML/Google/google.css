@@ -1,0 +1,90 @@
+.top{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    text-align:right;
+    margin-right:50px;
+    margin-top: 10px;
+    font-family: '함초롱바탕';
+    color: black;
+}
+.top > *{
+    margin-left: 10px;
+}
+.top > a{
+    height: 21px;
+}
+#topImg2{
+    height: 43px;
+}
+.middle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.button{
+    width:142.94px;
+    height:36px;
+    cursor: pointer;
+    background-color: lightgray;
+    margin-top: 10px;
+    border:1px solid white;
+    padding: 5px;
+}
+#google{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wndrks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.searchBar{
+    width: 561px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    padding:0 20px 0 20px;
+    outline: whitesmoke;
+    box-shadow: 1px 1px 1px;
+
+}
+.searchBar button {
+    width: 30px;
+    height: 27px;
+    background-image: url("./mike.PNG");
+    background-repeat: no-repeat;
+    outline: 0;
+    border: 0;
+}
+.searchBar button:hover{
+    cursor: pointer;
+}
+#box{
+    border: none;
+}
+#box:focus{
+    outline: none;
+}
+#bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#button1{
+    
+}

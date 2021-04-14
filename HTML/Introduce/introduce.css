@@ -21,3 +21,14 @@ div{
    background-color: black;
    color: white;
 }
+#test{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 20px;
+    border: solid 8px black ;
+    padding: top, right, bottom, left ;
+}
+#button button{
+    
+}
