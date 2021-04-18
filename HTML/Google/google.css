@@ -1,6 +1,13 @@
-.top{
+body, html{
     width: 100%;
-    height: 85px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.top{
+    width: 1900px;
+    height: 48px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -8,8 +15,12 @@
     text-align:right;
     margin-right:50px;
     margin-top: 10px;
-    font-family: '함초롱바탕';
+    font-size: 13px;
+    font-family: 'arial, sans-serif';
     color: black;
+}
+#topImg1, #topImg2{
+    cursor: pointer;
 }
 .top > *{
     margin-left: 10px;
@@ -17,38 +28,57 @@
 .top > a{
     height: 21px;
 }
+.top a:hover{
+    text-decoration: underline black;
+}
 #topImg2{
     height: 43px;
 }
 .middle{
-    width: 100%;
+    width: 1900px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
 }
 .button{
-    width:142.94px;
+    width:100%;
     height:36px;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     background-color: lightgray;
     margin-top: 10px;
     border:1px solid white;
     padding: 5px;
 }
+#flex{
+    width: 1880px;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #google{
-    width:100%;
-    height: 100%;
+    width:272px;
+    height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #wndrks{
+    width: 1900px;
+    height: 290px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.in{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 .searchBar{
     width: 561px;
@@ -57,10 +87,13 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 40px;
-    padding:0 20px 0 20px;
-    outline: whitesmoke;
-    box-shadow: 1px 1px 1px;
-
+    padding:5px 8px 0 14px;
+    outline: gray;
+    border: #f1f3f4 1px solid;
+/*     box-shadow: 1px 1px 1px; */
+}
+.searchBar:hover{
+    box-shadow: 2px 2px 2px #f1f3f4;
 }
 .searchBar button {
     width: 30px;
@@ -79,12 +112,85 @@
 #box:focus{
     outline: none;
 }
-#bottom{
+#buton{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
-#button1{
-    
+#div{
+    width: 1900px;
+    height: 350px;
+}
+#bottom1{
+    width: 100%;
+    height: 20px;
+    padding: 15px 30px;
+    outline: none;
+    background-color:#F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Apple SD Gothic Neo", arial,sans-serif;
+    font-size: 15px;
+    border-bottom: 1px solid #dadce0;
+}
+#bottom2{
+    width: 100%;
+    height: 67px;
+    padding: 0px 20px;
+    font-size: 14px;
+    font-family: "Apple SD Gothic Neo", arial, sans-serif;
+    background-color: #F2F2F2;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#bottom2 a{
+    white-space: nowrap;
+    font-family: "Apple SD Gothic Neo", arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.navBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    padding: 7px;
+}
+.navBox > a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+    font-size: 13px;
+    font-family: Roboto, 'Segoe UI',Arial,'Malgun Gothic',Gulim,sans-serif;
+}
+.navBox > a:hover{
+    background-color: rgba(241, 243, 244, 1);
+}
+.navBox > a > div{
+    width: 112px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navBox > a > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius:100%;
+    background-color: #f1f3f4;
+}
+.navBox>a>div>p{
+    display: inline;
+    text-decoration: none;
 }
