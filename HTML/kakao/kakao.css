@@ -199,6 +199,9 @@ header{
     line-height: 22px;
     cursor: pointer;
 }
+.tit_newsfeed:hover{
+    text-decoration: underline;
+}
 .desc_newsfeed{
     font-size: 14px;
     color: #666666;
