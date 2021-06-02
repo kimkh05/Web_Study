@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js_pracitice</title>
+        <h2>객체의 선언과 속성 출력 실습</h2>
+        <hr>
+        <script>
+            var toy = new Object();
+            toy.name = "레고";
+            toy.color = "빨강";
+            toy.shape = "직사각형";
+            toy.display = printfObject;
+            function printfObject(){
+                document.write("<b>장난감은 "+ toy.name + "입니다.<br/>");
+                document.write("색상은 " + toy.color + " 이고, 모양은 " + toy.shape+"입니다.<br/><br/>");
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>객체의 속성과 메소드 출력 </legend>
+            <script>
+                toy.display();
+                toy.color="파랑";
+                toy.display();
+                console.log(toy.name);
+            </script>
+        </fieldset>
+    </body>
+</html>

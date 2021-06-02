@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <head>
+        <title>this 객체의 선언 실습</title>
+        <h2>this 객체의 선언 실습</h2>
+        <hr>
+            <script>
+                function Display(){
+                    document.writeln("이름:"+this.name+"***전공:***"+this.major);
+                    document.writeln("학번:"+this.hakbun+"***나이:***"+this.age+"<BR>");
+                }
+
+                function Pinfor(pname, pmajor, phakbun, page){
+                    this.name=pname;
+                    this.major=pmajor;
+                    this.hakbun=phakbun;
+                    this.age=page;
+                    this.print=Display;
+                }
+            </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>this 객체 선언</legend>
+            <script>
+                p1=new Pinfor("홍길동", "컴퓨터공학",20121234,33);
+                p2=new Pinfor("이순신", "통계학", 20123456,20);
+                p3=new Pinfor("강감찬", "수학", 20127890,25);
+                p1.print();
+                p2.print();
+                p3.print();
+            </script>
+        </fieldset>
+    </body>
+</html>
