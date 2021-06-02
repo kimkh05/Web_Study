@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_function</title>
+    <h2>Function과 이벤트처리 실습</h2>
+    <hr>
+    <script>
+        function greetings(you){
+            document.bgColor="skyblue";
+            alert("환영합니다!!" + you);
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Function과 이벤트처리</legend>
+        <form>
+            <input type="button" value="버튼을 누르세요" onclick="greetings('자바스크립트');" >
+        </form>
+    </fieldset>    
+</body>
+</html>
