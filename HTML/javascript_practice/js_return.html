@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>js_return</title>
+    <h2>return문에 의한 반환값 실습</h2>
+    <hr>
+    <script>
+        function TEST1(){
+            document.write("<b> TEST1은 인수가 없습니다!!<br><br>")
+        }
+
+        function TEST2(sname, sage){
+            document.write("TEST2 함수에서 책의 저자 이름은 "+ sname+"이고, 나이는 "+sage + "<br>")
+        }
+        function TEST3(inta, intb){
+            return inta+intb
+        }
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>return문에 의한 반환값</legend>
+        <script>
+            TEST1();
+            TEST2("김경호",17);
+            returnV = TEST3(50,25);
+            document.write("TEST3 함수의 결과 값 = " +returnV + "<br>");
+        </script>
+    </fieldset>
+</body>
+</html>
