@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Noname_Function</title>
+    <h2>function의 변수화 실습</h2>
+    <hr>
+    <script>
+        var greetings = function(visitor){
+            message="안녕하세요 "+visitor;
+            return message;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>function의 변수화</legend>
+        <script type ="text/javascript">
+            var salutation=greetings("홍길동 님");
+            document.write(salutation + "<br />");
+            var hello = greetings;
+            var welcome = greetings;
+            document.write(hello("이순신 장군님") + "<br />");
+            document.write(welcome("여러분들은 모두 의인입니다!!" + "<br />"));
+        </script>
+    </fieldset>
+</body>
+</html>
