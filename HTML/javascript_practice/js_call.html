@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>pushButton</title>
+    <h2>버튼을 눌러서 함수 호출 실습</h2>
+    <hr>
+    <script>
+        function wakeUpCall(){
+            setTimeout('alert("5초 후 나타납니다!!")', 5000);
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>이벤트핸들러 출력</legend>
+        <form>
+            <input type="button"
+                value="타이머"
+                onClick="wakeUpCall()">
+        </form>
+    </fieldset>
+</body>
+</html>
