@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Closure</title>
+    <h2>closure function 실습</h2>
+    <hr>
+    <script>
+        function paint(type, color){
+            var type, color;
+            var str = type +"는(은) "+color +"이다. "; //지역변수
+
+            var tellme = function(){
+                document.write("<big>"+str+"</big></br>")
+            }   // 무명 function
+            return tellme; // function의 참조를 반환
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>closure function</legend>
+        <script>
+            paint("바다", "파랑");
+            var say1 =paint("장미", "빨강");
+            var say2 = paint("태양", "노랑");
+            alert(say1);
+            say1();
+            say2();
+        </script>
+    </fieldset>   
+</body>
+</html>
