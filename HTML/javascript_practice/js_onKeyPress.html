@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <h2>onClick, onFocus 이벤트 실습</h2>
+    <hr>
+    <script>
+        function calculate(form){
+            form.num.value=eval(form.lim.value);
+        }
+    </script>    
+</head>
+<body>
+    <fieldset>
+        <legend>onClick, onFocus 이벤트핸들러</legend>
+        <form name="limform">
+            <br><b> 계산 할 수식을 입력하세요 ?:
+                <input type="text" name="lim" value="" size="20"><br>
+                수식 계산 결과 값=</b>
+                <input type="text" name="num" onfocus="this.blur();"> <br><br>
+                <input type="button" value="계산처리" onclick="calculate(this.form);">
+        </form>
+    </fieldset>
+</body>
+</html>
