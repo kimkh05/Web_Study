@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>onKeyUp / onKeyDown</title>
+    <h2>onKeyDown/onKeyUp</h2>
+    <hr>
+
+</head>
+<body bgcolor="white"><font face="arial">
+    <fieldset>
+        <legend>onKeyDown/onKeyUp 이벤트핸들러</legend>
+        <br>키를 입력하고 누르면 화살표가 아래로 표시되고, ( onKeyDown)
+        <br>키를 놓으면 화살표가 위로 표시됩니다!!( onKeyUp)<br><br></b>
+        <form>
+            박스안에 아무 키나 입력하세요 : 
+            <input type="text" size="10"
+            onkeydown="document.Arrow.src='down_arrow.gif'"
+            onkeyup="document.Arrow.src='up_arrow.gif'">
+            <input type = reset value="확인">
+        </form>
+        <img src="up.arrow.gif" name="Arrow">
+    </fieldset>
+</body>
+</html>
