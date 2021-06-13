@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>onError 이벤트 실습</h2>
+        <hr>
+        <script>
+            function searchError(Image){
+                alert("에러" + Image.Name + "찾을 수 없습니다");
+            }
+        </script>
+    </head>
+    <!--그림 파일이 없을 경우 onError 이벤트 발생-->
+    <body>
+        <fieldset>
+            <legend>onError 이벤트핸들러</legend>
+            <form name="limform">
+                <img Name="aaa" src="JavaScript.wmf" align="center" border="2" onerror="searchError(this)">
+            </form>
+        </fieldset>
+    </body>
+</html>
