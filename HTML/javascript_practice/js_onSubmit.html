@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <h2>onSubmit 이벤트 실습</h2>
+    <hr>
+    <script language="JavaScript">
+        function popUP(){
+            newWin=window.open
+                ('','NewWin', 'toolbaar=no, status=no, width=500, height=200');
+            newWin.document.write("<h3>새로운 폼의 정보</h3><hr>");
+            newWin.document.write("<b>이름 : </b>" + document.form1.namestring.value);
+            newWin.document.write("<br><b>주소 : </b>"+document.form1.adress.value);
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>onSubmit 이벤트</legend>
+        <form name="form1" onsubmit="popUp();">
+            <p>이름을 입력하세요 : 
+                <input type="text" name="namestring" size="20">
+            <p>주소를 입력하세요 : 
+                <input type="text" name="address" size="20">
+            <p>
+            <input type="submit" value="폼 전송">
+            <input type="reset" value="재정의">
+        </form>
+    </fieldset>
+</body>
+</html>
