@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>onBlur와 onFocus 이벤트 실습</h2>
+        <hr>
+        <style>
+            .inputOut{
+                background-color: ''; border: 1px solid #7F9DB9;
+            }
+        </style>
+        <script>
+            function setStyle(oj){
+                oj.style.backgroundColor="ffffEE";
+                oj.style.border='1px solid #ff9900';
+                alert("테투리가 작성되고 노랑색으로 채워졌습니다!!");
+            }
+            function remobeStyle(oj){
+                oj.style.backgroundColor="";
+                oj.style.border="1px solid #7F9DB9";
+                alert("테두리가 작성되고 흰색으로 채워졌습니다.");
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>onBlur와 onFocus 이벤트핸들러</legend>
+            <form>
+                <input type="text" onfocus="setStyle(this)" onblur="remobeStyle(this)">
+            </form>
+        </fieldset>
+    </body>
+</html>
