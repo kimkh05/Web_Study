@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>짝수끼리 더하기</h1>
+    <script>
+        var i;
+        var n = 10;
+        var sum = 0;
+        for(i = 1;i<n+1;i++){
+            if(i%2==1) continue; // i가 홀수라면 반복문을 건너뜀
+            sum+=i;
+            document.write(i + "------" + sum + "<br>");
+        }
+    </script>
+</body>
+</html>
