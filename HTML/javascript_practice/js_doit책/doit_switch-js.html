@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자리 배치도</h1>
+    <script>
+        var memNum = prompt("입장객 수를 입력하세요.");
+        var colNum = prompt("한 줄에 앉을 사람 수를 입력하세요.");
+        if(memNum %colNum === 0) rowNum = parseInt(memNum / colNum);
+        else rowNum = parseInt(memNum / colNum) + 1;
+        document.write("모두 " + rowNum + "개의 줄이 필요합니다.");
+    </script>
+</body>
+</html>
