@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼을 클릭하면 알림창 표시하기</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="changeBg('green')">초록색</a></li>
+        <li><a href="#" onclick="changeBg('orange')">주황색</a></li>
+        <li><a href="#" onclick="changeBg('purple')">보라색</a></li>
+    
+    </ul>
+    <div id="result"></div>
+    
+    <script>
+        function changeBg(color){
+            var result = document.querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+    </script>    
+</body>
+</html>
