@@ -1,0 +1,19 @@
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: skyblue;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.reading{
+    font-size: 23px;
+    text-align: center;
+}
+.accent{
+    color: red;
+    
+}
