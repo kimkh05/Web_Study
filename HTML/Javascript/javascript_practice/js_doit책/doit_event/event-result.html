@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./event-result.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 당첨자 뽑기 프로그램</title>
+</head>
+<body>
+    <div class="top">
+        <a>당첨자 발표</a>
+    </div>
+    <script>
+        var seed = prompt("전체 응모자 수를 입력하세요.", "");
+        var picked = Math.floor((Math.random() * seed) + 1);
+
+        document.write("전체 응모자 수: " + seed + "명");
+        document.write("<br>");
+        document.write("당첨자: " + picked + "번");
+    </script>
+</body>
+</html>
