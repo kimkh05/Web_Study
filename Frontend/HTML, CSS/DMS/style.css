@@ -1,0 +1,68 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+header{
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upper{
+  width: 100%;
+  height: 1007px;
+  background-image: linear-gradient(180deg,#078f91,#19b6b6);
+  display: flex;
+  justify-content: center;
+}
+.dms_icon{
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.dms_icon>img{
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+.headerLogoTitle{
+  font-size: 1.875rem;
+  margin: 0px 0px 0px 50px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: NanumSquareEB;
+  font-weight: 800;
+  font-size: 30px;
+}
+.upperMenu{
+  width: 614px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upperMenu>button{
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  color: #19B6B6;
+  border: none;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.upperMenu>button:hover{
+  box-shadow: none;
+}
+.menuText{
+  font-family: NanumSquareB;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+}
