@@ -66,3 +66,9 @@ header{
   cursor: pointer;
   font-weight: 400;
 }
+.today_menu{
+  width: 1200px;
+  height: 765.46px;
+  display: flex;
+  flex-direction: column;
+}
