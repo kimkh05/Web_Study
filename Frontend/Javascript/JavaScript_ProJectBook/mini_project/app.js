@@ -37,6 +37,6 @@ function activeItems(event){
       event.target.parentNode.children[i].removeAttribute('class');
     }
     // 클릭한 목록 스타일 지정
-    
-  }
-}
+    event.target.setAttribute('class', 'active');
+  }// end if
+}// end function
