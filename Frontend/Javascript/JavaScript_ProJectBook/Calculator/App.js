@@ -16,5 +16,5 @@ for(let i = 0;i<input<length;i++){
     input[i].onclick = funtion() {
       cancelIdleCallback(this.value); // this는 현재 클릭한 버튼 객체를 의미하며, 해당하는 입력 값을 calc( ) 함수에 전달합니다.
     }
-  }// end if
-}// end for
+  }
+}
