@@ -12,3 +12,5 @@ function getCurrentDate()
 
         return year + month + day ;
     }
+
+console.log("1");
