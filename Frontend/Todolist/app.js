@@ -10,6 +10,12 @@ function clickButton() {
   b.setAttribute("class", "list-group-item");
   b.setAttribute("id", "li"+a);
   b.innerHTML = input.value;
+  b.innerHTML += "<button onClick='del("+a+")'>삭제</button>";
   list.appendChild(b);
   a++;
+}
+
+function del(a){
+  var li = document.getElementById('li' + a);
+  list.removeChild(li);
 }
